@@ -20,5 +20,5 @@ function cambiarPagina() {
         var url = "https://www.ejemplo.com";
         // Abrir la URL en una nueva pestaña
         window.open(https://www.youtube.com/watch?v=NWT9sVXYgzc, "_blank");
-    }, 3000);
+    }, 2000);
 }
