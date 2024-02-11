@@ -4,8 +4,8 @@ function cambiarTexto() {
     var indiceAleatorio = Math.floor(Math.random() * textos.length); // Genera un índice aleatorio
     texto.innerHTML = textos[indiceAleatorio]; // Selecciona un texto aleatorio y lo muestra
     var botonNo = document.getElementById("botonNo");
-    var nuevaPosicionX = Math.floor(Math.random() * (window.innerWidth - 100));
-    var nuevaPosicionY = Math.floor(Math.random() * (window.innerHeight - 100));
+    var nuevaPosicionX = Math.floor(Math.random() * window.innerWidth);
+    var nuevaPosicionY = Math.floor(Math.random() * window.innerHeight);
     botonNo.style.left = nuevaPosicionX + "px";
     botonNo.style.top = nuevaPosicionY + "px";
 }
@@ -15,10 +15,5 @@ function cambiarPagina() {
     
     // Cambiar el contenido del texto
     texto.innerHTML = "Es una cita entoncesssssssssssss :)))";
-    setTimeout(function() {
-        // URL a la que se redireccionará
-        var url = "https://www.ejemplo.com";
-        // Abrir la URL en una nueva pestaña
-        window.open(https://www.youtube.com/watch?v=NWT9sVXYgzc, "_blank");
-    }, 2000);
+    window.open("https://www.youtube.com/watch?v=NWT9sVXYgzc", "_blank");
 }
