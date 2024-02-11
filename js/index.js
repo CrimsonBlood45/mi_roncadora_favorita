@@ -4,8 +4,8 @@ function cambiarTexto() {
     var indiceAleatorio = Math.floor(Math.random() * textos.length); // Genera un índice aleatorio
     texto.innerHTML = textos[indiceAleatorio]; // Selecciona un texto aleatorio y lo muestra
     var botonNo = document.getElementById("botonNo");
-    var nuevaPosicionX = Math.floor(Math.random() * window.innerWidth);
-    var nuevaPosicionY = Math.floor(Math.random() * window.innerHeight);
+    var nuevaPosicionX = Math.floor(Math.random() * (window.innerWidth - 100));
+    var nuevaPosicionY = Math.floor(Math.random() * (window.innerHeight - 100));
     botonNo.style.left = nuevaPosicionX + "px";
     botonNo.style.top = nuevaPosicionY + "px";
 }
