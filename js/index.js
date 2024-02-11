@@ -15,5 +15,10 @@ function cambiarPagina() {
     
     // Cambiar el contenido del texto
     texto.innerHTML = "Es una cita entoncesssssssssssss :)))";
-    window.open("https://www.youtube.com/watch?v=NWT9sVXYgzc", "_blank");
+    setTimeout(function() {
+    // URL a la que se redireccionará
+    var url = "https://www.ejemplo.com";
+    // Abrir la URL en una nueva pestaña
+    window.open(https://www.youtube.com/watch?v=NWT9sVXYgzc, "_blank");
+  }, 2000);
 }
