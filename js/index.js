@@ -15,5 +15,8 @@ function cambiarPagina() {
     
     // Cambiar el contenido del texto
     texto.innerHTML = "Es una cita entoncesssssssssssss :)))";
-    window.open("https://www.youtube.com/watch?v=NWT9sVXYgzc", "_blank");
+    setTimeout(function() {
+        // El código que quieres ejecutar después de la espera
+        window.open("https://www.youtube.com/watch?v=NWT9sVXYgzc", "_blank");
+    }, 2000);
 }
