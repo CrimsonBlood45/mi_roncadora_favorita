@@ -3,11 +3,16 @@ function cambiarTexto() {
     var texto = document.getElementById("texto");
     var indiceAleatorio = Math.floor(Math.random() * textos.length); // Genera un índice aleatorio
     texto.innerHTML = textos[indiceAleatorio]; // Selecciona un texto aleatorio y lo muestra
-    var botonNo = document.getElementById("botonNo");
-    var nuevaPosicionX = Math.floor(Math.random() * window.innerWidth);
-    var nuevaPosicionY = Math.floor(Math.random() * window.innerHeight);
-    botonNo.style.left = nuevaPosicionX + "px";
-    botonNo.style.top = nuevaPosicionY + "px";
+    var contenedor = document.querySelector('.contenedor');
+    var boton = document.querySelector('.botonNo');
+    
+    // Generamos nuevas coordenadas aleatorias dentro del contenedor
+    var nuevoTop = Math.random() * (contenedor.offsetHeight - boton.offsetHeight);
+    var nuevoLeft = Math.random() * (contenedor.offsetWidth - boton.offsetWidth);
+    
+    // Aplicamos las nuevas coordenadas al botón
+    boton.style.top = nuevoTop + 'px';
+    boton.style.left = nuevoLeft + 'px';
 }
 function cambiarPagina() {
     // Obtener el elemento de texto por su ID
@@ -18,5 +23,5 @@ function cambiarPagina() {
     setTimeout(function() {
         // El código que quieres ejecutar después de la espera
         window.open("https://www.youtube.com/watch?v=NWT9sVXYgzc", "_blank");
-    }, 2000);
+    }, 800);
 }
