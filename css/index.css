@@ -1,28 +1,41 @@
-body {
+*{
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
 }
-
-.container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
+html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    display: flex;
+    width: 650px;
+    height: 650px;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor{   
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color: #9c7c8c;
+}
+img{
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+}
+p{
+    color: #9c7c8c;
     text-align: center;
 }
-
-h1 {
-    color: #9c7c8c;
-    font-size: 40px;
-}
-
-.message {
-    margin-top: 30px;
-}
-
 button {
     padding: 10px 20px;
     margin: 20px;
@@ -34,25 +47,14 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.botonNo{
-  position: absolute;
-}
-p{
-  color: #9c7c8c;
-}
 button:hover {
     background-color: #745c64;
 }
-img.heart{
-  width: 30px;
-  height: 30px;
-  padding: 15px;
-} 
-header{
-  height 20px;
-  display: flex;
-  align-items: center;
+.botonNo{
+    position: absolute;
+    left: 50%;
 }
-body{
-  position: relative;
+.botonSi{
+    position: absolute;
+    right: 50%;
 }
